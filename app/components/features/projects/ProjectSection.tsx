@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { getProjects } from "~/services/projectApi"
 import type { Project } from "~/types/api/Project"
@@ -28,7 +27,34 @@ export default function ProjectSection() {
 
     return <section id="projects">
 
-        Projects
+       <h2>Projects</h2>
 
+
+        {projects.length === 0 ? (
+           <p>No projects yet</p> 
+        ) : (
+
+       <ul>
+            {projects.map(p => (
+                <li key={p.slug}>
+
+                    <h3>{p.title}</h3>
+                    <p>{p.description}</p>
+
+                    <div>
+                        <a href={p.githubUrl}>GitHub</a>
+                        {p.liveUrl && (
+                            <a href={p.liveUrl}>Live</a>
+                        )}
+                    </div>
+
+                    <small>{p.tech.join(", ")}</small>
+
+                </li>
+
+            ))}
+       </ul>
+
+        )}
     </section>
-}
+};
