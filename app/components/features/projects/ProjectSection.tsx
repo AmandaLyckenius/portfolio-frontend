@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProjects } from "~/services/projectApi"
 import type { Project } from "~/types/api/Project"
+import ProjectCard from "./ProjectCard";
 
 
 
@@ -36,21 +37,8 @@ export default function ProjectSection() {
 
        <ul>
             {projects.map(p => (
-                <li key={p.slug}>
 
-                    <h3>{p.title}</h3>
-                    <p>{p.description}</p>
-
-                    <div>
-                        <a href={p.githubUrl}>GitHub</a>
-                        {p.liveUrl && (
-                            <a href={p.liveUrl}>Live</a>
-                        )}
-                    </div>
-
-                    <small>{p.tech.join(", ")}</small>
-
-                </li>
+                <ProjectCard project={p} key={p.slug}></ProjectCard>
 
             ))}
        </ul>
