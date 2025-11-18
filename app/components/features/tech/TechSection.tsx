@@ -24,10 +24,6 @@ export default function TechSection(){
 
                 </div>
 
-
-
-
-
             </div>
 
         </section>
