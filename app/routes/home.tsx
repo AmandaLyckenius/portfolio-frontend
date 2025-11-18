@@ -14,13 +14,19 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <main>
-    <h1>Portfolio under construction</h1>
-    <Header/>
-    <HeroSection/>
-    <AboutSection/>
-    <ProjectSection/>
-    <ContactSection/>
-    <Footer/>
-  </main>;
+  return ( 
+    <div className="relative">
+
+      <Header/>
+      
+      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+          <HeroSection/>
+          <AboutSection/>
+          <ProjectSection/>
+          <ContactSection/>
+          <Footer/>
+      </main>
+    </div>
+  
+  )
 }
