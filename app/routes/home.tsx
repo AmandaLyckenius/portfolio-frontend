@@ -5,6 +5,7 @@ import ProjectSection from "~/components/features/projects/ProjectSection";
 import ContactSection from "~/components/features/contact/ContactSection";
 import Footer from "~/components/nav/Footer";
 import HeroSection from "~/components/features/hero/HeroSection";
+import TechSection from "~/components/features/tech/TechSection";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -22,6 +23,7 @@ export default function Home() {
       <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
           <HeroSection/>
           <AboutSection/>
+          <TechSection/>
           <ProjectSection/>
           <ContactSection/>
           <Footer/>

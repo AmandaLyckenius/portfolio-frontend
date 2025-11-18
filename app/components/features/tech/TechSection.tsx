@@ -1,6 +1,6 @@
 export default function TechSection(){
     return (
-        <section id="tech">
+        <section id="tech" className=" min-h-screen snap-start">
 
             <div>
 
