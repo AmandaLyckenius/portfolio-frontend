@@ -7,7 +7,7 @@ export default function TechSection(){
     return (
         <section id="tech" className=" min-h-screen snap-start  ">
 
-            <div>
+            <div className=" hidden">
 
                 <h2 className="text-center text-3xl font-bold mb-8">Tech Stack</h2>
                 
@@ -28,7 +28,7 @@ export default function TechSection(){
 
             </div>
 
-            <div>
+            <div className=" max-w-5xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 bg-sky-100 p-6 rounded-3xl">
                 <TechCard title="Frontend">
                     Experience with React, TypeScript and building responsive, component-based UIs
                 </TechCard>

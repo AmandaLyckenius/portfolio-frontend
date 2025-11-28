@@ -7,7 +7,8 @@ type TechCardProps = {
 }
 
 export default function TechCard({title, icon, children}: TechCardProps){
-    return <div>
+    return (
+    <div>
 
         <div>
             {icon &&
@@ -19,4 +20,5 @@ export default function TechCard({title, icon, children}: TechCardProps){
         <p>{children}</p>
 
     </div>
+    )
 }
