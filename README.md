@@ -1,7 +1,16 @@
 # Welcome to my portfolio!
 
-This is a frontend portfolio project created with Vite + React.
-Shows my projects retrieved from a Spring Boot backend API.
+This is a frontend portfolio project created with ** Vite + React + Tailwind **.
+The project displays my tech stack and projects fetched from a **Spring Boot backend API**.
+
+---
+
+## Features
+
+- Scroll-based navigation
+- Hero, About, Tech Stack, Project & Contact sections
+- Projects fetched from backend
+- Tech Cloud layout with responsive badge positions
 
 ---
 
