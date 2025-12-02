@@ -4,7 +4,10 @@ export default function HeroSection() {
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 md:px-12 max-w-5xl mx-auto">
 
             <div className="text-center md:text-left space-y-4">
-                <h2 className=" font-display text-5xl md:text-9xl font-semibold">Amanda Lyckenius</h2>
+                <h2 className=" font-display text-5xl sm:text-6xl md:text-8xl lg:text-8xl font-semibold">
+                    Amanda Lyckenius
+                </h2>
+
                 <p className="text-xl md:text-3xl text-brand-text/80">Fullstack developer</p>
             </div>
 
