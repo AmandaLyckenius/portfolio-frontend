@@ -1,4 +1,4 @@
-import { LinkedinLogo } from "phosphor-react";
+import { Envelope, LinkedinLogo } from "phosphor-react";
 import { GithubIcon } from "~/components/logos/GithubIcon";
 
 
@@ -17,6 +17,11 @@ export default function ContactSection() {
             <a href="https://github.com/AmandaLyckenius">
                 <GithubIcon className=" w-8 h-8"/>
             </a>
+
+            <a href="mailto:alyckenius@gmail.com">
+                <Envelope size={32} />
+            </a>
+            
 
         </div>
 
