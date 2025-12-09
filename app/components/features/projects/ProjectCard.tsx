@@ -8,6 +8,14 @@ export default function ProjectCard({project}: ProjectCardProps){
 
     return <li className=" bg-sky-100 rounded-xl w-72 md:w-80 p-6 flex flex-col space-y-4">
 
+        {project.imageUrl && (
+            <img
+                src={project.imageUrl}
+                alt={project.title}
+                className="w-full h-40 object-cover rounded-lg mb-2"
+            />
+        )}
+
         <h3 className=" font-bold">
             {project.title}
         </h3>

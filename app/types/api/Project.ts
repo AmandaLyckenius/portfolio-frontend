@@ -5,4 +5,5 @@ export interface Project{
     githubUrl: string;
     liveUrl: string | null;
     tech: string []; 
+    imageUrl: string | null;
 }
