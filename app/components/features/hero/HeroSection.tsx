@@ -8,7 +8,7 @@ export default function HeroSection() {
                     Amanda Lyckenius
                 </h2>
 
-                <p className="text-xl md:text-3xl text-brand-text/80">Fullstack developer</p>
+                <p className="text-xl md:text-3xl text-brand-text-muted">Fullstack developer</p>
             </div>
 
             <div className="flex justify-center md:justify-end">
