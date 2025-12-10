@@ -10,14 +10,16 @@ export default function TechCard({title, icon, children}: TechCardProps){
     return (
     <div>
 
-        <div>
-            {icon &&
-            <div className="">{icon}</div>}
+        <div className=" flex items-end gap-3">
+            
 
-            <h3>{title}</h3>
+            <h3 className="font-semibold text-lg">{title}</h3>
+
+            {icon &&
+            <div>{icon}</div>}
         </div>
 
-        <p>{children}</p>
+        <p className="mt-3">{children}</p>
 
     </div>
     )
