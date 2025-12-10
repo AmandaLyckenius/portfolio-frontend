@@ -12,6 +12,7 @@
   /* Ytor/kort/sektionsboxar */
   --color-brand-surface: #ffffff;      
   --color-brand-surface-alt: #f3e8ff;  
+  --color-brand-surface-light: #FAF9F6; /*färgen bakom bilderna*/
 
   /* Text */
   --color-brand-text: #1e293b;        

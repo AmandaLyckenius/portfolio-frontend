@@ -54,9 +54,22 @@ export default function ProjectSection() {
 
     return <section id="projects" className=" min-h-screen snap-start flex flex-col items-center justify-center gap-8">
 
-       <h2 className=" font-bold text-2xl">Projects</h2>
+        <div>
 
-       {content}
+            <p className="uppercase text-xs tracking-[0.25em] text-brand-text-muted text-center">
+                Projects
+            </p>
 
+            <h2 className="text-center text-3xl font-bold mt-2">
+                Selected Works
+            </h2>
+
+            <p className="mt-3 mb-6 text-base leading-relaxed text-brand-text-muted text-center max-w-2xl mx-auto">
+                Work from both individual and group projects, where I contributed to architecture, implementation, 
+                and problem-solving across the stack.
+            </p>
+
+            {content}
+       </div>
     </section>
 };
