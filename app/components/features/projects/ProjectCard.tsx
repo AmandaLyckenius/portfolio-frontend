@@ -6,7 +6,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({project}: ProjectCardProps){
 
-    return <li className=" bg-sky-100 rounded-2xl w-72 md:w-80 flex flex-col space-y-4 pb-6 overflow-hidden">
+    return <li className=" bg-sky-100 rounded-2xl w-72 md:w-80 flex flex-col  pb-6 overflow-hidden">
 
         {project.imageUrl && (
             <div className="w-full h-40 md:h-48">
@@ -18,7 +18,7 @@ export default function ProjectCard({project}: ProjectCardProps){
             </div>
         )}
 
-        <div className="p-4">
+        <div className="px-4">
             <h3 className=" font-bold">
                 {project.title}
             </h3>
