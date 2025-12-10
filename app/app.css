@@ -6,18 +6,35 @@
 
   --font-display: "Playfair Display", serif;
 
-  --color-brand-bg: #f7f4f2;
-  --color-brand-surface: #fffef9;
-  --color-brand-text: #3e3a39;
-  --color-brand-accent: #e94f64;
-  --color-brand-accent-hover: #b04a5a;
+  /* Sidbakgrund */
+  --color-brand-bg: #faf5ff;          
+
+  /* Ytor/kort/sektionsboxar */
+  --color-brand-surface: #ffffff;      
+  --color-brand-surface-alt: #f3e8ff;  
+
+  /* Text */
+  --color-brand-text: #1e293b;        
+  --color-brand-text-muted: #6b7280;   
+
+  /* Accent/knappar */
+  --color-brand-accent: #7c3aed;       /* primär (knappar, länkar) */
+  --color-brand-accent-soft: #c4b5fd;  /* soft variant, pill-bgs, borders */
+  --color-brand-accent-hover: #5b21b6; /* hover på primär */
+
+  /* Grön accent (valfri) */
+  --color-brand-success: #86efac;      /* t.ex. små highlights */
 }
 
 html,
 body {
-  @apply bg-brand-bg text-brand-text font-sans;
+  @apply bg-brand-bg text-brand-text font-sans antialiased;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
 }

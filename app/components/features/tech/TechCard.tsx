@@ -8,16 +8,18 @@ type TechCardProps = {
 
 export default function TechCard({title, icon, children}: TechCardProps){
     return (
-    <div>
+    <div className="bg-brand-surface">
 
-        <div>
+        <div className=" flex items-end gap-3 text-brand-accent">
+            
+
+            <h3 className="font-semibold text-xl text-brand-text">{title}</h3>
+
             {icon &&
-            <div className="">{icon}</div>}
-
-            <h3>{title}</h3>
+            <div>{icon}</div>}
         </div>
 
-        <p>{children}</p>
+        <p className="mt-3 text-base leading-relaxed text-brand-muted">{children}</p>
 
     </div>
     )
