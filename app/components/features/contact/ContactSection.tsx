@@ -3,14 +3,18 @@ import { GithubIcon } from "~/components/logos/GithubIcon";
 
 
 export default function ContactSection() {
-    return <section id="contact" className="px-4 py-24 ">
+    return <section id="contact" className="min-h-screen flex items-center px-4 py-24">
         <div className="max-w-2xl mx-auto text-center">
 
             <div className="flex flex-col items-center gap-3 text-center">
 
+                <p className="uppercase text-xs tracking-[0.25em] text-brand-text-muted text-center">
+                    Contact
+                </p>
+
                 <h2 className="text-3xl font-bold" >Let's build something together</h2>
 
-                <div className="pt-3">
+                <div className=" text-brand-text-muted pt-3">
                     <p>I'm based i Stockholm and open for junior developer opportunities</p>
 
                     <p> Feel free to reach out. I'd love to hear from you </p>

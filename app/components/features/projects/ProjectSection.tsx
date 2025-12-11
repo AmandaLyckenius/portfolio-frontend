@@ -54,7 +54,7 @@ export default function ProjectSection() {
 
     return <section id="projects" className=" px-4 py-24">
 
-        <div className=" max-w-4xl mx-auto">
+        <div className=" max-w-6xl mx-auto">
 
             <p className="uppercase text-xs tracking-[0.25em] text-brand-text-muted text-center">
                 Projects
