@@ -11,7 +11,6 @@
 
   /* Ytor/kort/sektionsboxar */
   --color-brand-surface: #ffffff;      
-  --color-brand-surface-alt: #f3e8ff;  
   --color-brand-surface-light: #FAF9F6; /*färgen bakom bilderna*/
 
   /* Text */
@@ -20,10 +19,14 @@
 
   /* Accent/knappar */
   --color-brand-accent: #7c3aed;       /* primär (knappar, länkar) */
-  --color-brand-accent-soft: #c4b5fd;  /* soft variant, pill-bgs, borders */
   --color-brand-accent-hover: #5b21b6; /* hover på primär */
 
-  /* Grön accent (valfri) */
+  /*Footer*/
+  --color-brand-footer: #F5F6F7 ;
+
+  /* Används inte just nu */
+  --color-brand-accent-soft: #c4b5fd;  /* soft variant, pill-bgs, borders */
+  --color-brand-surface-alt: #f3e8ff;  
   --color-brand-success: #86efac;      /* t.ex. små highlights */
 }
 
