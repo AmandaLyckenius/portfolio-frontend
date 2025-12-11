@@ -20,7 +20,7 @@ export default function Home() {
 
       <Header/>
       
-      <main className="pt-24">
+      <main>
           <HeroSection/>
           <AboutSection/>
           <TechSection/>
