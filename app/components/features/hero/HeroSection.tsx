@@ -1,5 +1,5 @@
 export default function HeroSection() {
-    return <section id="hero" className="flex items-center justify-center min-h-screen snap-start ">
+    return <section id="hero" className="flex items-center justify-center min-h-screen ">
 
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 md:px-12 max-w-5xl mx-auto">
 

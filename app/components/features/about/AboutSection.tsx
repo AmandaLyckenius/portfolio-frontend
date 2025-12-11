@@ -1,7 +1,7 @@
 import amanda from "../../../assets/me.jpg"
 
 export default function AboutSection() {
-    return <section id="about" className="snap-start min-h-screen flex items-center justify-center px-4">
+    return <section id="about" className="px-4 py-24">
 
         <div className="max-w-4xl mx-auto">
             <p className="uppercase text-xs tracking-[0.25em] text-brand-text-muted text-center">

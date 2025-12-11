@@ -7,7 +7,7 @@ import { techPositions } from "./techPositions";
 
 export default function TechSection(){
     return (
-        <section id="tech" className=" snap-start px-4 py-24 ">
+        <section id="tech" className=" px-4 py-24 ">
             <div className="max-w-5xl mx-auto">
                 <p className="uppercase text-xs tracking-[0.25em] text-brand-text-muted text-center">Tech</p>
                 <h2 className="text-center text-3xl font-bold mt-2">Tech Stack</h2> 

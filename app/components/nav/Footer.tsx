@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full py-12 px-8 text-sm text-slate-600 snap-start flex flex-col">
+    <footer className="w-full py-12 px-8 text-sm text-slate-600 flex flex-col">
       <p className="font-medium text-slate-700">
         Amanda Lyckenius — Fullstack Developer
       </p>
