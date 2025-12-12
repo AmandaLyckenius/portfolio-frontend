@@ -34,7 +34,7 @@ export default function AboutSection() {
 
                 </div>
 
-                <img src={amanda} alt="Amanda" className="w-80 h-80 rounded-full object-cover shadow-md" />
+                <img src={amanda} alt="Amanda" className="w-56 sm:w-64 md:w-80 h-auto aspect-square rounded-full object-cover shadow-md" />
 
             </div>
 
