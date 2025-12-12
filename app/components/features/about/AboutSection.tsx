@@ -17,7 +17,7 @@ export default function AboutSection() {
                 thoughtful design, and continuous learning.
             </p>
        
-            <div className="mt-8 bg-brand-surface rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-8 max-w-4xl w-full shadow-[0_8px_24px_rgba(15,23,42,0.10)] ">
+            <div className="mt-8 bg-brand-surface rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-8 max-w-4xl w-full shadow-card ">
 
                 <div className="space-y-4 text-sm md:text-base" >
                     <p className="text-base leading-relaxed text-brand-text-muted " >
