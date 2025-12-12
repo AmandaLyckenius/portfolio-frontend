@@ -14,6 +14,10 @@ export default function ContactSection() {
 
                 <h2 className="text-3xl font-bold" >Let's build something together</h2>
 
+            </div>
+
+            <div  className= "mt-10 bg-brand-surface rounded-3xl shadow-[0_8px_24px_rgba(15,23,42,0.08)] p-12 md:p-16">
+            
                 <div className=" text-brand-text-muted pt-3">
                     <p>I'm based i Stockholm and open for junior developer opportunities</p>
 
@@ -21,28 +25,24 @@ export default function ContactSection() {
 
                 </div>
 
+                <div className=" mt-8 flex justify-center gap-4 text-brand-accent hover:text-brand-accent-hover">
+
+                    <a href="https://www.linkedin.com/in/amanda-lyckenius/" className=" cursor-pointer inline-block transition transform hover:scale-110 hover:rotate-2">
+                        <LinkedinLogo size={40}/>
+                    </a>
+                    
+                    
+                    <a href="https://github.com/AmandaLyckenius">
+                        <GithubIcon className=" w-10 h-10 transition transform hover:scale-110 hover:rotate-2 fill-brand-accent hover:fill-brand-accent-hover"/>
+                    </a>
+
+                    <a href="mailto:alyckenius@gmail.com" className="transition transform hover:scale-110 hover:rotate-2">
+                        <Envelope size={40} />
+                    </a>
+                    
+                </div>
 
             </div>
-
-
-            <div className=" mt-8 flex justify-center gap-4">
-
-                <a href="https://www.linkedin.com/in/amanda-lyckenius/" className=" cursor-pointer inline-block transition transform hover:scale-110 hover:rotate-2">
-                    <LinkedinLogo size={40}/>
-                </a>
-                
-                
-                <a href="https://github.com/AmandaLyckenius">
-                    <GithubIcon className=" w-10 h-10 transition transform hover:scale-110 hover:rotate-2"/>
-                </a>
-
-                <a href="mailto:alyckenius@gmail.com" className="transition transform hover:scale-110 hover:rotate-2">
-                    <Envelope size={40} />
-                </a>
-                
-
-            </div>
-
 
         </div>
         
