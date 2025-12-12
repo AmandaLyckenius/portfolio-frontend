@@ -12,11 +12,11 @@ export default function ContactSection() {
                     Contact
                 </p>
 
-                <h2 className="text-3xl font-bold" >Let's build something together</h2>
+                <h2 className="text-3xl font-bold mt-2" >Let's build something together</h2>
 
             </div>
 
-            <div  className= "mt-10 bg-brand-surface rounded-3xl shadow-[0_8px_24px_rgba(15,23,42,0.08)] p-12 md:p-16">
+            <div  className= "mt-8 bg-brand-surface rounded-3xl shadow-[0_8px_24px_rgba(15,23,42,0.08)] p-12 md:p-16">
             
                 <div className=" text-brand-text-muted pt-3">
                     <p>I'm based i Stockholm and open for junior developer opportunities</p>

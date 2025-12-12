@@ -43,7 +43,7 @@ export default function ProjectSection() {
         content = <p>No projects yet</p>;
     } else {
         content = (
-            <ul className=" flex flex-row flex-wrap gap-6 justify-center ">
+            <ul className=" flex flex-row flex-wrap gap-6 justify-center mt-8">
                 {projects.map(p => (
                     <ProjectCard project={p} key={p.slug} />
                 ))}
