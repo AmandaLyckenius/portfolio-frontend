@@ -33,9 +33,9 @@ export default function ProjectCard({project}: ProjectCardProps){
         <div className=" mt-auto pt-4 flex flex-col gap-8">
 
             <div className=" flex justify-center gap-3">
-                <a href={project.githubUrl} className=" bg-brand-accent py-1.5 rounded-md px-3 text-white hover:cursor-pointer hover:bg-brand-accent-hover transition tex-sm">Code</a>
+                <a href={project.githubUrl} className=" bg-brand-accent py-1.5 rounded-lg px-3 text-white hover:cursor-pointer hover:bg-brand-accent-hover transition tex-sm">Code</a>
                 {project.liveUrl && (
-                    <a href={project.liveUrl} className="bg-brand-accent py-1.5 rounded-md px-3 text-white hover:cursor-pointer hover:bg-brand-accent-hover transition tex-sm">Live</a>
+                    <a href={project.liveUrl} className="bg-brand-accent py-1.5 rounded-lg px-3 text-white hover:cursor-pointer hover:bg-brand-accent-hover transition tex-sm">Live</a>
                 )}
             </div>
 
