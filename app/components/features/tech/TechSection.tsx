@@ -33,7 +33,7 @@ export default function TechSection(){
 
                 </div>
 
-                <div className=" mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 bg-brand-surface p-6 rounded-3xl shadow-[0_8px_24px_rgba(15,23,42,0.10)]">
+                <div className=" mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 bg-brand-surface p-6 rounded-3xl shadow-card">
                     <TechCard title="Frontend" icon={<Desktop size={32} />}>
                         Experience with React, TypeScript and building responsive, component-based UIs
                     </TechCard>
