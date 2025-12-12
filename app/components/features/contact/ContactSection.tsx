@@ -16,12 +16,12 @@ export default function ContactSection() {
 
             </div>
 
-            <div  className= "mt-8 bg-brand-surface rounded-3xl shadow-card p-12 md:p-16">
+            <div  className= "mt-8 bg-brand-surface rounded-3xl shadow-card p-8 md:p-12 lg:p-16">
             
                 <div className=" text-brand-text-muted pt-3">
-                    <p>I'm based i Stockholm and open for junior developer opportunities</p>
+                    <p>I'm based in Stockholm and open for junior developer opportunities</p>
 
-                    <p> Feel free to reach out. I'd love to hear from you </p>
+                    <p> Feel free to reach out. I'd love to hear from you. </p>
 
                 </div>
 
