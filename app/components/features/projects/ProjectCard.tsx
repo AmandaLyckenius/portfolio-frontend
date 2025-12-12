@@ -18,12 +18,12 @@ export default function ProjectCard({project}: ProjectCardProps){
             </div>
         )}
 
-        <div className="px-4">
-            <h3 className=" font-bold">
+        <div className="px-4 mt-4">
+            <h3 className=" font-semibold text-lg">
                 {project.title}
             </h3>
 
-            <p>{project.description}</p>
+            <p className="mt-1 text-sm text-brand-text-muted">{project.description}</p>
 
 
 
