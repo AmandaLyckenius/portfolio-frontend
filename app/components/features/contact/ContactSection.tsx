@@ -44,7 +44,7 @@ export default function ContactSection() {
 
                     <a href="/cv_amanda_lyckenius.pdf" 
                         download
-                        className="flex items-center gap-0.5 text-lg font-medium transition transform hover:scale-110 hover:rotate-2"
+                        className="flex items-center gap-0.5 text-lg font-medium ml-2 transition transform hover:scale-110 hover:rotate-2"
                     >
                         CV<ArrowDown size={16} />
                         
