@@ -40,9 +40,9 @@ export default function ProjectCard({project}: ProjectCardProps){
             </div>
 
 
-            <div  className="hidden flex flex-wrap gap-2 text-slate-500">
+            <div  className="hidden flex flex-wrap gap-2 text-brand-text-muted px-2">
                 {project.tech.map(t => (
-                    <span key={t} className="px-2 py-0.5 bg-sky-50 rounded-full text-xs">
+                    <span key={t} className="px-2 py-0.5 bg-brand-accent-soft rounded-full text-xs">
                         {t}
                     </span>
                 ))}
