@@ -1,3 +1,5 @@
+import { ArrowDown, FileArrowDown } from "phosphor-react";
+
 export default function Header() {
     return (
     
@@ -21,6 +23,17 @@ export default function Header() {
                 <a href="#contact" className="hover:text-brand-accent-soft transition-colors">
                     Contact
                 </a>
+
+                <span className="opacity-40">|</span>
+
+                <a href="/cv_amanda_lyckenius.pdf" 
+                    download
+                    className="hover:text-brand-accent-soft transition-colors flex items-center"
+                >
+                    CV<ArrowDown size={12} />
+                    
+                </a>
+
             </div>
         </nav>
 
