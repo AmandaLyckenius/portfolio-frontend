@@ -1,4 +1,4 @@
-import { Envelope, LinkedinLogo } from "phosphor-react";
+import { ArrowDown, Envelope, LinkedinLogo } from "phosphor-react";
 import { GithubIcon } from "~/components/logos/GithubIcon";
 
 
@@ -25,7 +25,7 @@ export default function ContactSection() {
 
                 </div>
 
-                <div className=" mt-8 flex justify-center gap-4 text-brand-accent hover:text-brand-accent-hover">
+                <div className=" mt-8 flex justify-center items-center gap-4 text-brand-accent hover:text-brand-accent-hover">
 
                     <a href="https://www.linkedin.com/in/amanda-lyckenius/" className=" cursor-pointer inline-block transition transform hover:scale-110 hover:rotate-2">
                         <LinkedinLogo size={40}/>
@@ -38,6 +38,16 @@ export default function ContactSection() {
 
                     <a href="mailto:alyckenius@gmail.com" className="transition transform hover:scale-110 hover:rotate-2">
                         <Envelope size={40} />
+                    </a>
+
+                    <span className="w-px h-5 bg-brand-accent/30"></span>
+
+                    <a href="/cv_amanda_lyckenius.pdf" 
+                        download
+                        className="flex items-center gap-0.5 text-lg font-medium transition transform hover:scale-110 hover:rotate-2"
+                    >
+                        CV<ArrowDown size={16} />
+                        
                     </a>
                     
                 </div>
