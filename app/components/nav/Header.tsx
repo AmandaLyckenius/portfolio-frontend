@@ -24,11 +24,14 @@ export default function Header() {
                     Contact
                 </a>
 
-                <span className="opacity-40">|</span>
+                {/* CV link: hidden on phones to prevent the navbar from clipping on narrow screens.
+                    Visible from `sm` and up. 
+                */}
+                <span className="hidden sm:inline opacity-40">|</span>
 
                 <a href="/cv_amanda_lyckenius.pdf" 
                     download
-                    className="hover:text-brand-accent-soft transition-colors flex items-center"
+                    className=" hidden sm:flex items-center hover:text-brand-accent-soft transition-colors "
                 >
                     CV<ArrowDown size={12} />
                     
