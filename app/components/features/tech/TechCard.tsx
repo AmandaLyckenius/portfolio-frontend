@@ -19,7 +19,7 @@ export default function TechCard({title, icon, children}: TechCardProps){
             <div>{icon}</div>}
         </div>
 
-        <p className="mt-3 text-base leading-relaxed text-brand-muted">{children}</p>
+        <p className="mt-3 text-base leading-relaxed text-brand-text-muted">{children}</p>
 
     </div>
     )
