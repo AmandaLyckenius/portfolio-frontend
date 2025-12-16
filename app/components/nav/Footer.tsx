@@ -11,7 +11,9 @@ export default function Footer() {
 
       <div className="text-xs text-slate-400 mt-4">
         <p>© {new Date().getFullYear()} Amanda Lyckenius</p>
-        <p>Stockholm, Sweden</p>
+        <address className="not-italic">
+            Stockholm, Sweden
+        </address>
       </div>
     </footer>
   );
