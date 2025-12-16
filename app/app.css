@@ -50,3 +50,9 @@ h1, h2, h3 {
 html {
   scroll-behavior: smooth;
 }
+
+/*Global a11y focus*/
+:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 4px;
+}
