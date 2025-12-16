@@ -52,15 +52,15 @@ export default function ProjectSection() {
     }
 
 
-    return <section id="projects" className=" px-4 py-24">
+    return <section id="projects" aria-labelledby="projects-heading" className=" px-4 py-24">
 
         <div className=" max-w-6xl mx-auto">
 
-            <p className="uppercase text-xs tracking-[0.25em] text-brand-text-muted text-center">
+            <p aria-hidden="true" className="uppercase text-xs tracking-[0.25em] text-brand-text-muted text-center">
                 Projects
             </p>
 
-            <h2 className="text-center text-3xl font-bold mt-2">
+            <h2 id="projects-heading" className="text-center text-3xl font-bold mt-2">
                 Selected Works
             </h2>
 
