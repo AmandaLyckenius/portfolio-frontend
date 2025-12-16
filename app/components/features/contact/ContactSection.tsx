@@ -1,29 +1,45 @@
 import { ArrowDown, Envelope, LinkedinLogo } from "phosphor-react";
 import { GithubIcon } from "~/components/logos/GithubIcon";
+import ContactForm from "./ContactForm";
 
 
 export default function ContactSection() {
-    return <section id="contact" aria-labelledby="contact-heading" className="min-h-screen flex items-center px-4 py-24">
-        <div className="max-w-2xl mx-auto text-center">
+    return <section id="contact" aria-labelledby="contact-heading" className=" px-4 py-24">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 ">
 
-            <div className="flex flex-col items-center gap-3 text-center">
+            <div className="flex flex-col justify-center text-center">
 
-                <p aria-hidden="true" className="uppercase text-xs tracking-[0.25em] text-brand-text-muted text-center">
+                <p aria-hidden="true" className="uppercase text-xs tracking-[0.25em] text-brand-text-muted">
                     Contact
                 </p>
 
                 <h2 id="contact-heading" className="text-3xl font-bold mt-2" >Let's build something together</h2>
 
-            </div>
-
-            <div  className= "mt-8 bg-brand-surface rounded-3xl shadow-card p-8 md:p-12 lg:p-16">
-            
-                <div className=" text-brand-text-muted pt-3">
-                    <p>I'm based in Stockholm and open for junior developer opportunities</p>
+                <div className=" text-brand-text-muted mt-3 text-base leading-relaxed">
+                    <p>I'm based in Stockholm and open for junior developer opportunities.</p>
 
                     <p> Feel free to reach out. I'd love to hear from you. </p>
 
                 </div>
+
+            </div>
+
+            <div className="mt-8 w-full max-w-3xl mx-auto px-4 sm:px-6">
+            
+                <div className="bg-white rounded-3xl shadow-card border border-brand-text-muted/10 p-10 md:p-12">
+                    <h3 className="text-2xl font-semibold mb-8 text-center md:text-left">
+                        Send me a message
+                    </h3>
+                    <ContactForm/>
+                </div>
+
+            </div>
+
+            <div className="mt-8 max-w-3xl mx-auto flex flex-col items-center gap-4">
+
+                <p className="text-sm text-brand-text-muted">
+                    Or reach me directly
+                </p>
 
                 <div aria-label="Contact options" className=" mt-8 flex justify-center items-center gap-4 text-brand-accent hover:text-brand-accent-hover">
 
@@ -58,6 +74,12 @@ export default function ContactSection() {
                 </div>
 
             </div>
+
+        
+
+                
+
+          
 
         </div>
         
