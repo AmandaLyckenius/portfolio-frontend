@@ -28,10 +28,14 @@
   /*Footer*/
   --color-brand-footer: #F5F6F7 ;
 
+  /*Success & error*/
+  --color-brand-success: #86efac;
+  --color-brand-error: #fef2f2;
+ 
   /* Används inte just nu */
   --color-brand-accent-soft: #c4b5fd;  /* soft variant, pill-bgs, borders */
   --color-brand-surface-alt: #f3e8ff;  
-  --color-brand-success: #86efac;      /* t.ex. små highlights */
+
 }
 
 html,

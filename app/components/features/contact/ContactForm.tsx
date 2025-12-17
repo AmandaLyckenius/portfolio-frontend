@@ -80,6 +80,20 @@ export default function ContactForm() {
                 />
             </div>
 
+            {feedback && (
+                <p
+                role="alert"
+                className={
+                    "mb-4 flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-medium w-full transition-all duration-200 justify-center " +
+                    (feedback.type === "error"
+                    ? "bg-brand-error text-brand-text"
+                    : "bg-brand-success text-brand-text")
+                }
+                >
+                {feedback.text}
+                </p>
+            )}
+
             <div className=" flex justify-center md:justify-end pt-2 mt-6">
                 <button type="submit" className="w-full md:w-auto rounded-xl bg-brand-accent px-8 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-accent-hover">Send</button>
             </div>
