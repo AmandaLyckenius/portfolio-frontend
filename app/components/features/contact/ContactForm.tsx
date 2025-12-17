@@ -15,6 +15,8 @@ export default function ContactForm() {
         text: string;
     } | null>(null);
 
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setData(prev => ({
             ...prev, 
@@ -41,6 +43,9 @@ export default function ContactForm() {
         }
 
         try {
+
+            setIsLoading(true);
+
             await sendContactMessage(data);
 
             setFeedback({ type: "success", text: "Your message has been sent"})
@@ -48,6 +53,8 @@ export default function ContactForm() {
 
         } catch (err) {
             setFeedback({type: "error", text: "Something went wrong. Please try again later."})
+        } finally{
+            setIsLoading(false);
         }
 
         
@@ -98,7 +105,12 @@ export default function ContactForm() {
             )}
 
             <div className=" flex justify-center md:justify-end pt-2 mt-6">
-                <button type="submit" className="w-full md:w-auto rounded-xl bg-brand-accent px-8 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-accent-hover">Send</button>
+                <button disabled={isLoading} aria-busy={isLoading} type="submit" 
+                    className="w-full md:w-auto rounded-xl bg-brand-accent px-8 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-accent-hover disabled:opacity-60 disabled:cursor-not-allowed">
+                        
+                    {isLoading ? "Sending..." : "Send" }
+                    
+                </button>
             </div>
             
 
