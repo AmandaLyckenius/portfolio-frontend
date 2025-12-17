@@ -39,7 +39,15 @@ export default function ContactForm() {
             return;
         }
 
-        console.log("submitting:", data)
+        try {
+            console.log("submitting:", data)
+            setFeedback({ type: "success", text: "Your message has been sent"})
+
+        } catch (err) {
+            setFeedback({type: "error", text: "Something went wrong. Please try again later."})
+        }
+
+        
     }
 
     return (
