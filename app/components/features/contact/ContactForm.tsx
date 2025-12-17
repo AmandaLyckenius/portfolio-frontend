@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { sendContactMessage } from "~/services/contactApi";
 import type { ContactFormData } from "~/types/api/ContactFormData"
 
 export default function ContactForm() {
@@ -40,8 +41,10 @@ export default function ContactForm() {
         }
 
         try {
-            console.log("submitting:", data)
+            await sendContactMessage(data);
+
             setFeedback({ type: "success", text: "Your message has been sent"})
+            setData({name: "", email: "", message: ""})
 
         } catch (err) {
             setFeedback({type: "error", text: "Something went wrong. Please try again later."})
