@@ -18,6 +18,7 @@ export default function ContactForm() {
     const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFeedback(null);
         setData(prev => ({
             ...prev, 
             [e.target.name]: e.target.value,
@@ -49,6 +50,11 @@ export default function ContactForm() {
             await sendContactMessage(data);
 
             setFeedback({ type: "success", text: "Your message has been sent"})
+           
+            setTimeout(() => {
+                setFeedback(null);
+              }, 4000);
+
             setData({name: "", email: "", message: ""})
 
         } catch (err) {
@@ -67,14 +73,14 @@ export default function ContactForm() {
 
                 <div className=" flex flex-col gap-1">
                     <label htmlFor="name" className="text-xs font-medium tracking-wide text-brand-text-muted">Name</label>
-                    <input onChange={handleChange} type="text" name="name" id="name" placeholder="Enter your name here" autoComplete="name"
+                    <input value={data.name} onChange={handleChange} type="text" name="name" id="name" placeholder="Enter your name here" autoComplete="name"
                     className="w-full rounded-xl border border-brand-text-muted/20 bg-white px-4 py-3 text-sm md:text-base text-brand-text placeholder:text-brand-text-muted/60"
                     />
                 </div>
 
                 <div className=" flex flex-col gap-1">
                     <label htmlFor="email" className="text-xs font-medium tracking-wide text-brand-text-muted">Email</label>
-                    <input onChange={handleChange} type="email" name="email" id="email" placeholder="Enter your email here" autoComplete="email"
+                    <input value={data.email} onChange={handleChange} type="email" name="email" id="email" placeholder="Enter your email here" autoComplete="email"
                     className="w-full rounded-xl border border-brand-text-muted/20 bg-white px-4 py-3 text-sm md:text-base text-brand-text placeholder:text-brand-text-muted/60"
                     />
                 </div>
@@ -84,7 +90,7 @@ export default function ContactForm() {
 
             <div className="flex flex-col gap-1">
                 <label htmlFor="message" className="text-xs font-medium tracking-wide text-brand-text-muted">Message</label>
-                <textarea onChange={handleChange} name="message" id="message" placeholder="Enter your message here"
+                <textarea value={data.message} onChange={handleChange} name="message" id="message" placeholder="Enter your message here"
                     rows={4}
                     className="w-full rounded-xl border border-brand-text-muted/20 bg-white px-4 py-3 text-sm md:text-base text-brand-text placeholder:text-brand-text-muted/60 resize-none"
                 />
