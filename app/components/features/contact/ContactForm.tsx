@@ -8,6 +8,8 @@ export default function ContactForm() {
         email:"",
         message:"",
     })
+    const [error, setError] = useState<string>("");
+    const [message, setMessage] = useState<string>("");
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setData(prev => ({
@@ -18,6 +20,24 @@ export default function ContactForm() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        if (!data.name.trim()) {
+            setError("Please enter your name.");
+            return;
+        }
+
+        if (!data.email.trim()) {
+            setError("Please enter a valid email.");
+            return;
+        }
+
+        if (!data.message.trim()) {
+            setError("Please enter a message.");
+            return;
+        }
+
+        setError("");
+
         console.log("submitting:", data)
     }
 
