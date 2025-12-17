@@ -8,8 +8,11 @@ export default function ContactForm() {
         email:"",
         message:"",
     })
-    const [error, setError] = useState<string>("");
-    const [message, setMessage] = useState<string>("");
+
+    const [feedback, setFeedback] = useState<{
+        type: "error" | "success";
+        text: string;
+    } | null>(null);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setData(prev => ({
@@ -22,21 +25,19 @@ export default function ContactForm() {
         e.preventDefault();
 
         if (!data.name.trim()) {
-            setError("Please enter your name.");
+            setFeedback({ type: "error", text: "Please enter your name." });
             return;
         }
 
         if (!data.email.trim()) {
-            setError("Please enter a valid email.");
+            setFeedback({ type: "error", text: "Please enter your email." });
             return;
         }
 
         if (!data.message.trim()) {
-            setError("Please enter a message.");
+            setFeedback({ type: "error", text: "Please enter a message." });
             return;
         }
-
-        setError("");
 
         console.log("submitting:", data)
     }
