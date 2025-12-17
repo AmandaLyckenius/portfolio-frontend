@@ -26,7 +26,7 @@ export default function ContactSection() {
 
             <div className="mt-8 w-full max-w-3xl mx-auto px-4 sm:px-6">
             
-                <div className="bg-white rounded-3xl shadow-card border border-brand-text-muted/10 p-10 md:p-12">
+                <div className="bg-brand-surface rounded-3xl shadow-card border border-brand-text-muted/10 p-10 md:p-12">
                     <h3 className="text-2xl font-semibold mb-8 text-center md:text-left">
                         Send me a message
                     </h3>
