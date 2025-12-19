@@ -38,7 +38,7 @@ export default function ContactSection() {
             <div className="mt-8 max-w-3xl mx-auto flex flex-col items-center gap-4">
 
                 <p className="text-sm text-brand-text-muted">
-                    Or reach me directly
+                    You can also find me here
                 </p>
 
                 <div aria-label="Contact options" className=" mt-8 flex justify-center items-center gap-4 text-brand-accent hover:text-brand-accent-hover">
