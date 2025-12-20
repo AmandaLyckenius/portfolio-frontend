@@ -1,3 +1,5 @@
+import character from "../../../assets/hero/character.png";
+
 export default function HeroSection() {
     return <section id="hero" aria-labelledby="hero-heading" className="flex items-center justify-center min-h-screen ">
 
@@ -12,10 +14,12 @@ export default function HeroSection() {
             </div>
 
             <div className="flex justify-center md:justify-end">
-          <div className="w-48 h-48 bg-brand-surface rounded-full shadow-md flex items-center justify-center text-brand-text/40">
-            bild?
-          </div>
-        </div>
+                <img
+                src={character}
+                alt="Illustrated character of Amanda Lyckenius"
+                className="max-h-[65vh] w-auto"
+                />
+            </div>
 
 
         </div>
