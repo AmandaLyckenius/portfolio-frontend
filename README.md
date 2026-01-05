@@ -48,6 +48,6 @@ The app will be available at `http://localhost:5173`
 
 ## Live demo
 
-Live version coming soon
+Live version: `https://amandalyckenius.vercel.app/`
 
 
