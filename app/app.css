@@ -6,12 +6,16 @@
 
   --font-display: "Playfair Display", serif;
 
+  /*Shadows*/
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.10);
+  --shadow-footer: 0 -6px 24px rgba(0, 0, 0, 0.06);
+
   /* Sidbakgrund */
   --color-brand-bg: #faf5ff;          
 
   /* Ytor/kort/sektionsboxar */
   --color-brand-surface: #ffffff;      
-  --color-brand-surface-alt: #f3e8ff;  
+  --color-brand-surface-light: #FAF9F6; /*färgen bakom bilderna*/
 
   /* Text */
   --color-brand-text: #1e293b;        
@@ -19,11 +23,19 @@
 
   /* Accent/knappar */
   --color-brand-accent: #7c3aed;       /* primär (knappar, länkar) */
-  --color-brand-accent-soft: #c4b5fd;  /* soft variant, pill-bgs, borders */
   --color-brand-accent-hover: #5b21b6; /* hover på primär */
 
-  /* Grön accent (valfri) */
-  --color-brand-success: #86efac;      /* t.ex. små highlights */
+  /*Footer*/
+  --color-brand-footer: #F5F6F7 ;
+
+  /*Success & error*/
+  --color-brand-success: #86efac;
+  --color-brand-error: #fef2f2;
+ 
+  /* Används inte just nu */
+  --color-brand-accent-soft: #c4b5fd;  /* soft variant, pill-bgs, borders */
+  --color-brand-surface-alt: #f3e8ff;  
+
 }
 
 html,
@@ -37,4 +49,14 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Global a11y focus*/
+:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 4px;
 }

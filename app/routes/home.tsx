@@ -20,7 +20,7 @@ export default function Home() {
 
       <Header/>
       
-      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth pt-24">
+      <main>
           <HeroSection/>
           <AboutSection/>
           <TechSection/>

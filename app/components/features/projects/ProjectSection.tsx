@@ -43,7 +43,7 @@ export default function ProjectSection() {
         content = <p>No projects yet</p>;
     } else {
         content = (
-            <ul className=" flex flex-row flex-wrap gap-6 justify-center ">
+            <ul className=" flex flex-row flex-wrap gap-6 justify-center mt-8">
                 {projects.map(p => (
                     <ProjectCard project={p} key={p.slug} />
                 ))}
@@ -52,11 +52,24 @@ export default function ProjectSection() {
     }
 
 
-    return <section id="projects" className=" min-h-screen snap-start flex flex-col items-center justify-center gap-8">
+    return <section id="projects" aria-labelledby="projects-heading" className=" px-4 py-24">
 
-       <h2 className=" font-bold text-2xl">Projects</h2>
+        <div className=" max-w-6xl mx-auto">
 
-       {content}
+            <p aria-hidden="true" className="uppercase text-xs tracking-[0.25em] text-brand-text-muted text-center">
+                Projects
+            </p>
 
+            <h2 id="projects-heading" className="text-center text-3xl font-bold mt-2">
+                Selected Works
+            </h2>
+
+            <p className="mt-3 mb-6 text-base leading-relaxed text-brand-text-muted text-center max-w-2xl mx-auto">
+                Work from both individual and group projects, where I contributed to architecture, implementation, 
+                and problem-solving across the stack.
+            </p>
+
+            {content}
+       </div>
     </section>
 };

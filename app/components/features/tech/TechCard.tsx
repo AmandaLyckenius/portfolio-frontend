@@ -16,10 +16,10 @@ export default function TechCard({title, icon, children}: TechCardProps){
             <h3 className="font-semibold text-xl text-brand-text">{title}</h3>
 
             {icon &&
-            <div>{icon}</div>}
+            <div aria-hidden="true">{icon}</div>}
         </div>
 
-        <p className="mt-3 text-base leading-relaxed text-brand-muted">{children}</p>
+        <p className="mt-3 text-base leading-relaxed text-brand-text-muted">{children}</p>
 
     </div>
     )

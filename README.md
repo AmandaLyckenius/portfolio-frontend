@@ -1,9 +1,17 @@
 # Welcome to my portfolio!
 
-This is a frontend portfolio project created with ** Vite + React + Tailwind **.
-The project displays my tech stack and projects fetched from a **Spring Boot backend API**.
+This is a frontend portfolio project created with **Vite + React + Tailwind**.
+The project displays my tech stack and projects fetched from a **Spring Boot backend API** (hosted seperately).
 
 ---
+
+## Tech stack
+
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- REST API (Spring Boot backend)
 
 ## Features
 
@@ -35,5 +43,11 @@ The project displays my tech stack and projects fetched from a **Spring Boot bac
     ```
 
 The app will be available at `http://localhost:5173`
+
+---
+
+## Live demo
+
+Live version coming soon
 
 

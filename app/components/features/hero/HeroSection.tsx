@@ -1,21 +1,23 @@
-export default function HeroSection() {
-    return <section id="hero" className="flex items-center justify-center min-h-screen snap-start ">
+import amanda from "../../../assets/hero/me.jpg";
 
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 md:px-12 max-w-5xl mx-auto">
+export default function HeroSection() {
+    return <section id="hero" aria-labelledby="hero-heading" className="flex items-center justify-center min-h-screen ">
+
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 md:px-12 max-w-6xl mx-auto">
 
             <div className="text-center md:text-left space-y-4">
-                <h2 className=" font-display text-5xl sm:text-6xl md:text-8xl lg:text-8xl font-semibold">
+                <h2 id="hero-heading" className=" font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold">
                     Amanda Lyckenius
                 </h2>
 
-                <p className="text-xl md:text-3xl text-brand-text/80">Fullstack developer</p>
+                <p className="text-xl md:text-3xl text-brand-text-muted">Fullstack developer</p>
             </div>
 
             <div className="flex justify-center md:justify-end">
-          <div className="w-48 h-48 bg-brand-surface rounded-full shadow-md flex items-center justify-center text-brand-text/40">
-            bild?
-          </div>
-        </div>
+                <img src={amanda} alt="Picture of Amanda Lyckenius" className="w-56 sm:w-64 md:w-80 h-auto aspect-square rounded-full object-cover shadow-md" />
+            </div>
+
+
 
 
         </div>
