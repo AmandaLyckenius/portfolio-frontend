@@ -1,4 +1,4 @@
-import amanda from "../../../assets/me.jpg"
+import amanda from "../../../assets/about/me-snowboard.jpeg"
 
 export default function AboutSection() {
     return <section id="about" aria-labelledby="about-heading" className="px-4 py-24">
@@ -17,7 +17,7 @@ export default function AboutSection() {
                 thoughtful design, and continuous learning.
             </p>
        
-            <div className="mt-8 bg-brand-surface rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-8 max-w-4xl w-full shadow-card ">
+            <div className="mt-8 bg-brand-surface rounded-3xl p-8 grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] items-center justify-items-center gap-8 max-w-4xl w-full shadow-card ">
 
                 <div className="space-y-4 text-base leading-relaxed text-brand-text-muted " >
                     <p>
@@ -34,7 +34,7 @@ export default function AboutSection() {
 
                 </div>
 
-                <img src={amanda} alt="Picture of Amanda Lyckenius" className="w-56 sm:w-64 md:w-80 h-auto aspect-square rounded-full object-cover shadow-md" />
+                <img src={amanda} alt="Picture of Amanda Lyckenius on snowboard" className="  w-full aspect-4/5 max-h-80 md:max-h-[360px] rounded-xl object-cover shadow-md" />
 
             </div>
 

@@ -1,4 +1,4 @@
-import character from "../../../assets/hero/character.png";
+import amanda from "../../../assets/hero/me.jpg";
 
 export default function HeroSection() {
     return <section id="hero" aria-labelledby="hero-heading" className="flex items-center justify-center min-h-screen ">
@@ -14,12 +14,10 @@ export default function HeroSection() {
             </div>
 
             <div className="flex justify-center md:justify-end">
-                <img
-                src={character}
-                alt="Illustrated character of Amanda Lyckenius"
-                className="max-h-[65vh] w-auto"
-                />
+                <img src={amanda} alt="Picture of Amanda Lyckenius" className="w-56 sm:w-64 md:w-80 h-auto aspect-square rounded-full object-cover shadow-md" />
             </div>
+
+
 
 
         </div>
